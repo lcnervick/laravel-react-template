@@ -1,0 +1,91 @@
+ footer {
+	background-color: var(--theme-dark);
+	color: white;
+	padding: 1rem 2rem;
+	position: relative;
+}
+
+footer h4 {
+	color: var(--theme-light);
+    border-bottom: 2px solid var(--theme-light);
+    width: 70%;
+	max-width: 250px;
+    margin: 0.75em auto;
+}
+
+footer a {
+	text-decoration: none !important;
+	padding: 5px;
+    font-family: 'Questrial', sans-serif;
+    color: white;
+	text-decoration: none;
+    transition: all 0.15s ease-in-out;
+	cursor: pointer;
+}
+
+footer ul {
+	list-style: none;
+}
+
+footer ul li > a {
+	display: inline-block !important;
+}
+
+
+.logo-footer {
+	max-width: 350px;
+    display: block;
+    margin: 0 auto;
+    padding-top: 1rem;
+}
+
+.footer-content {
+	display: flex;
+	flex-wrap:wrap;
+	justify-content: space-around;
+	align-content: center;
+}
+
+.footer-content section {
+	flex: 1 1 auto;
+	padding:15px;
+	width: 350px;
+	text-align: center;
+	box-shadow: none !important;
+}
+
+.footer-contact-info a > svg {
+	height: 1em;
+    width: 1em;
+    fill: white;
+    margin-right: 10px;
+	vertical-align: middle;
+}
+
+
+.footer-contact-form {
+	margin: 0 auto;
+    padding: 1rem;
+    background-color: var(--theme-dark-accent);
+    border-radius: 20px;
+}
+@media screen and (min-width: 450px) {
+	.footer-contact-form {
+		width: 85%;
+	}
+}
+
+
+.footer-contact-form textarea {
+	height: 6em !important;
+}
+
+
+.footer-quick-links > a.active {
+	color: var(--theme-main);
+}
+.footer-quick-links > a:hover,
+.footer-quick-links > a:active {
+	color: var(--theme-light);
+}
+

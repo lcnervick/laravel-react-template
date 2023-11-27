@@ -1,0 +1,92 @@
+@keyframes show-sign-up {
+	0% { 
+		color: transparent;
+	 }
+	100% { 
+		color: ''; 
+	}
+}
+.sign-up-container {
+	width:100%;
+	max-width: 900px;
+	padding: 0.5rem;
+	margin: 0 auto;
+	border: 3px solid var(--theme-dark);
+	border-radius: 10px;
+	background-color: white;
+	background-image: linear-gradient(315deg, hsla(197, 77%, 52%, 15%) 25%, transparent 50%, hsla(197, 77%, 52%, 15%) 100%);
+	animation: 1s show-sign-up;
+}
+
+.sign-up-rate-chooser {
+	position: relative;
+	list-style: none;
+	max-width: 900px;
+    margin: 1.5rem auto;
+    border: 2px solid var(--theme-dark);
+    border-radius: 25px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    background-color: white;
+	box-shadow: inset 2px 2px 10px -5px black;
+	overflow: hidden;
+}
+.sign-up-rate-chooser::after {
+	content: var(--selected-rate-name, '');
+    position: absolute;
+    top: -2px;
+    left: calc(var(--selected-rate-pos, 0%) - 2px);
+    width: 33.3333%;
+    height: 100%;
+    font-weight: 600;
+	background-image: 
+		linear-gradient(
+			180deg,
+			var(--theme-main),
+			var(--theme-dark-accent) 50%,
+			var(--theme-main)
+		);
+	border: 2px solid var(--theme-dark);
+	box-shadow: 2px 2px 10px -3px black;
+    border-radius: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	transition: all 0.3s ease-in-out;
+}
+
+.sign-up-rate-chooser li {
+	flex: 1 0;
+	display: inline-block;
+    padding: 0.2rem;
+    margin: 0.2rem 0;
+	cursor: pointer;
+}
+
+.sign-up-container h3 {
+	font-size: 1.5rem;
+	line-height: 1em;
+}
+
+.sign-up-container-price {
+	font-weight: bold;
+	font-size: 4rem;
+	line-height: 4rem;
+}
+
+.sign-up-container hr {
+	max-width: 500px;
+	margin: 0 auto;
+}
+
+.sign-up-container-details {
+	padding: 1.5rem;
+	max-width: 500px;
+	margin: 0 auto;
+}
+
+.sign-up-container-details > li {
+	margin-bottom: 1.5rem;
+	text-align: left;
+}
